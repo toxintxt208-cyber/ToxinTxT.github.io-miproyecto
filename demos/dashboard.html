@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse — panel de datos de ejemplo | Portafolio</title>
+  <meta name="description" content="Panel de ingresos, pedidos y conversión con gráficos, tablas y tres rangos de fechas de ejemplo." data-en-description="Revenue, orders and conversion dashboard with charts, tables and three sample date ranges.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#070b12">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b12'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='24' font-weight='700' fill='%233ce0c6' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/demos.css?v=8">
+</head>
+
+<body class="theme-dash" data-title-es="Pulse — panel de datos de ejemplo | Portafolio" data-title-en="Pulse — sample data dashboard | Portfolio">
+  <a class="skip-link" href="#demo-main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <header class="demo-bar">
+    <a class="demo-back" href="../index.html#proyectos">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
+      <span data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</span>
+    </a>
+    <span class="demo-tag"><i aria-hidden="true"></i><span data-es="Demostración conceptual" data-en="Concept demo">Demostración conceptual</span></span>
+    <div class="demo-lang" role="group" aria-label="Seleccionar idioma" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+      <button type="button" data-demo-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-demo-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <div class="dash-shell">
+    <aside class="dash-side">
+      <a class="dash-logo" href="#demo-main"><span aria-hidden="true">P</span>Pulse</a>
+
+      <nav class="dash-nav" aria-label="Panel" data-es-aria="Navegación del panel" data-en-aria="Dashboard navigation">
+        <a class="is-active" href="#demo-main" aria-current="location" aria-label="Resumen" data-es-aria="Resumen" data-en-aria="Overview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+          <span data-es="Resumen" data-en="Overview">Resumen</span>
+        </a>
+        <a href="#ingresos" aria-label="Ingresos" data-es-aria="Ingresos" data-en-aria="Revenue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 3 5-7 4 4"/><path d="M3 21h18"/></svg>
+          <span data-es="Ingresos" data-en="Revenue">Ingresos</span>
+        </a>
+        <a href="#trafico" aria-label="Tráfico" data-es-aria="Tráfico" data-en-aria="Traffic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.4"/><path d="M3 20c0-3.2 2.7-5.4 6-5.4s6 2.2 6 5.4"/><path d="M16.5 5.3a3.2 3.2 0 0 1 0 5.4"/><path d="M18 14.8c2.1.6 3.5 2.3 3.5 4.5"/></svg>
+          <span data-es="Tráfico" data-en="Traffic">Tráfico</span>
+        </a>
+        <a href="#canales" aria-label="Canales" data-es-aria="Canales" data-en-aria="Channels">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M10 13h4"/><path d="M10 17h4"/></svg>
+          <span data-es="Canales" data-en="Channels">Canales</span>
+        </a>
+        <a href="#pedidos" aria-label="Pedidos" data-es-aria="Pedidos" data-en-aria="Orders">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.2a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.2a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.2a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.2a1.6 1.6 0 0 0-1.4 1Z"/></svg>
+          <span data-es="Pedidos" data-en="Orders">Pedidos</span>
+        </a>
+      </nav>
+
+      <div class="dash-side-foot">
+        <span class="dash-avatar" aria-hidden="true">D</span>
+        <div>
+          <b>Pulse Demo</b>
+          <small data-es="Administrador" data-en="Administrator">Administrador</small>
+        </div>
+      </div>
+    </aside>
+
+    <main tabindex="-1" class="dash-main" id="demo-main">
+      <div class="dash-top">
+        <div>
+          <h1 data-es="Resumen general" data-en="Overview">Resumen general</h1>
+          <p data-es="Datos de ejemplo" data-en="Sample data">Datos de ejemplo</p>
+        </div>
+        <div class="dash-range" role="group" aria-label="Rango de fechas" data-es-aria="Rango de fechas" data-en-aria="Date range" data-range-group>
+          <button type="button" data-range="7d" aria-pressed="false">7D</button>
+          <button type="button" data-range="30d" aria-pressed="true">30D</button>
+          <button type="button" data-range="90d" aria-pressed="false">90D</button>
+        </div>
+      </div>
+
+      <section class="dash-kpis" aria-label="Indicadores principales" data-es-aria="Indicadores principales" data-en-aria="Key metrics">
+        <article class="kpi">
+          <p class="kpi-label">
+            <span data-es="Ingresos" data-en="Revenue">Ingresos</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M17 6.5c0-2-2.2-3-5-3s-5 1-5 3 2 2.5 5 3 5 1 5 3-2.2 3-5 3-5-1-5-3"/></svg>
+          </p>
+          <b class="kpi-value" data-kpi="revenue">$72.860</b>
+          <span class="kpi-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg><span data-kpi-delta="revenue">+12,4%</span></span>
+        </article>
+
+        <article class="kpi">
+          <p class="kpi-label">
+            <span data-es="Pedidos" data-en="Orders">Pedidos</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1.2 13H4.8L6 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          </p>
+          <b class="kpi-value" data-kpi="orders">1.684</b>
+          <span class="kpi-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg><span data-kpi-delta="orders">+9,6%</span></span>
+        </article>
+
+        <article class="kpi">
+          <p class="kpi-label">
+            <span data-es="Conversión" data-en="Conversion">Conversión</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V9"/><path d="M10 19V5"/><path d="M16 19v-7"/><path d="M22 19H2"/></svg>
+          </p>
+          <b class="kpi-value" data-kpi="conversion">4,1%</b>
+          <span class="kpi-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg><span data-kpi-delta="conversion">+0,6%</span></span>
+        </article>
+
+        <article class="kpi">
+          <p class="kpi-label">
+            <span data-es="Cancelación" data-en="Churn">Cancelación</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg>
+          </p>
+          <b class="kpi-value" data-kpi="churn">0,9%</b>
+          <span class="kpi-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg><span data-kpi-delta="churn">-0,2%</span></span>
+        </article>
+      </section>
+
+      <div class="dash-grid">
+        <section class="panel" id="ingresos" aria-labelledby="revenue-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="revenue-title" data-es="Ingresos por intervalo" data-en="Revenue per interval">Ingresos por intervalo</h2>
+              <p data-period role="status">Últimos 30 días</p>
+            </div>
+            <span class="panel-tag">USD</span>
+          </div>
+          <div class="chart-line">
+            <svg viewBox="0 0 640 230" role="img" aria-label="Gráfico de ingresos con tendencia ascendente" data-es-aria="Gráfico de ingresos con tendencia ascendente" data-en-aria="Revenue chart with an upward trend">
+              <defs>
+                <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#3ce0c6" stop-opacity="0.28"/>
+                  <stop offset="100%" stop-color="#3ce0c6" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g stroke="rgba(140,180,220,0.12)" stroke-width="1">
+                <line x1="0" y1="45" x2="640" y2="45"/>
+                <line x1="0" y1="100" x2="640" y2="100"/>
+                <line x1="0" y1="155" x2="640" y2="155"/>
+                <line x1="0" y1="210" x2="640" y2="210"/>
+              </g>
+              <path data-revenue-area d="M0 178 C 52 162, 78 120, 122 128 S 196 168, 238 136 S 306 74, 352 92 S 424 128, 464 86 S 556 44, 640 62 L640 210 L0 210 Z" fill="url(#areaFill)"/>
+              <path data-revenue-line d="M0 178 C 52 162, 78 120, 122 128 S 196 168, 238 136 S 306 74, 352 92 S 424 128, 464 86 S 556 44, 640 62" fill="none" stroke="#3ce0c6" stroke-width="2.4" stroke-linecap="round"/>
+              <path data-revenue-previous d="M0 196 C 62 190, 92 172, 136 178 S 214 194, 258 176 S 330 150, 376 158 S 452 172, 492 150 S 580 128, 640 136" fill="none" stroke="#5b7cff" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.75"/>
+
+            </svg>
+            <div class="chart-legend">
+              <span><i aria-hidden="true"></i><span data-es="Este periodo" data-en="This period">Este periodo</span></span>
+              <span><i class="is-alt" aria-hidden="true"></i><span data-es="Periodo anterior" data-en="Previous period">Periodo anterior</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="trafico" aria-labelledby="traffic-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="traffic-title" data-es="Origen del tráfico" data-en="Traffic source">Origen del tráfico</h2>
+              <p data-es="Distribución de ejemplo" data-en="Sample distribution">Distribución de ejemplo</p>
+            </div>
+          </div>
+          <div class="donut-wrap">
+            <div class="donut" role="img" aria-label="62% tráfico directo, 22% búsqueda, 16% redes" data-es-aria="62% tráfico directo, 22% búsqueda, 16% redes" data-en-aria="62% direct traffic, 22% search, 16% social">
+              <b>62%</b>
+              <small data-es="Directo" data-en="Direct">Directo</small>
+            </div>
+            <div class="donut-legend">
+              <span><i aria-hidden="true"></i><span data-es="Directo · 62%" data-en="Direct · 62%">Directo · 62%</span></span>
+              <span><i class="c2" aria-hidden="true"></i><span data-es="Búsqueda · 22%" data-en="Search · 22%">Búsqueda · 22%</span></span>
+              <span><i class="c3" aria-hidden="true"></i><span data-es="Redes · 16%" data-en="Social · 16%">Redes · 16%</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="canales" aria-labelledby="channel-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="channel-title" data-es="Ventas por canal" data-en="Sales by channel">Ventas por canal</h2>
+              <p data-es="12 intervalos del periodo seleccionado" data-en="12 intervals in the selected period">12 intervalos del periodo seleccionado</p>
+            </div>
+            <span class="panel-tag" data-es="ÍNDICE" data-en="INDEX">ÍNDICE</span>
+          </div>
+          <div class="bars" data-bars aria-hidden="true">
+            <span style="--h: 42%"></span>
+            <span style="--h: 58%"></span>
+            <span style="--h: 51%"></span>
+            <span style="--h: 70%"></span>
+            <span style="--h: 64%"></span>
+            <span style="--h: 78%"></span>
+            <span style="--h: 59%"></span>
+            <span style="--h: 82%"></span>
+            <span style="--h: 74%"></span>
+            <span style="--h: 88%"></span>
+            <span style="--h: 79%"></span>
+            <span style="--h: 96%"></span>
+          </div>
+          <div class="bars-axis" aria-hidden="true"><span>01</span><span>04</span><span>08</span><span>12</span></div>
+        </section>
+
+        <section class="panel" id="pedidos" aria-labelledby="orders-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="orders-title" data-es="Últimos pedidos" data-en="Recent orders">Últimos pedidos</h2>
+              <p data-es="Actividad reciente" data-en="Recent activity">Actividad reciente</p>
+            </div>
+          </div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="orders-title">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th scope="col" data-es="Pedido" data-en="Order">Pedido</th>
+                  <th scope="col" data-es="Cliente" data-en="Customer">Cliente</th>
+                  <th scope="col" data-es="Estado" data-en="Status">Estado</th>
+                  <th scope="col" data-es="Total" data-en="Total">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#2841</td>
+                  <td data-es="Cliente 01" data-en="Customer 01">Cliente 01</td>
+                  <td><span class="status ok"><i aria-hidden="true"></i><span data-es="Pagado" data-en="Paid">Pagado</span></span></td>
+                  <td>$128</td>
+                </tr>
+                <tr>
+                  <td>#2840</td>
+                  <td data-es="Cliente 02" data-en="Customer 02">Cliente 02</td>
+                  <td><span class="status ok"><i aria-hidden="true"></i><span data-es="Pagado" data-en="Paid">Pagado</span></span></td>
+                  <td>$64</td>
+                </tr>
+                <tr>
+                  <td>#2839</td>
+                  <td data-es="Cliente 03" data-en="Customer 03">Cliente 03</td>
+                  <td><span class="status wait"><i aria-hidden="true"></i><span data-es="Pendiente" data-en="Pending">Pendiente</span></span></td>
+                  <td>$212</td>
+                </tr>
+                <tr>
+                  <td>#2838</td>
+                  <td data-es="Cliente 04" data-en="Customer 04">Cliente 04</td>
+                  <td><span class="status ok"><i aria-hidden="true"></i><span data-es="Pagado" data-en="Paid">Pagado</span></span></td>
+                  <td>$89</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <p class="d-note" style="margin-top: 16px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+        <span data-es="Demostración conceptual. Los datos, nombres y métricas son ficticios y no representan a una empresa real." data-en="Concept demo. All data, names and metrics are fictional and do not represent a real company.">Demostración conceptual. Los datos, nombres y métricas son ficticios y no representan a una empresa real.</span>
+      </p>
+    </main>
+  </div>
+
+  <footer class="demo-footer">
+    <div class="d-wrap demo-footer-in">
+      <p data-es="Pulse es una interfaz de ejemplo creada para mostrar diseño de producto y visualización de datos." data-en="Pulse is a sample interface created to showcase product design and data visualization.">Pulse es una interfaz de ejemplo creada para mostrar diseño de producto y visualización de datos.</p>
+      <p class="demo-footer-links">
+        <a href="../index.html#proyectos" data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/demos.js?v=9" defer></script>
+</body>
+</html>

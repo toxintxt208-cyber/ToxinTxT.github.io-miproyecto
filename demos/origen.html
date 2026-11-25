@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cafetería ficticia con cafés, bebidas frías, postres y un simulador de pedidos." data-en-description="Fictional coffee shop with coffee, cold drinks, desserts and an order simulator.">
+  <title>ORIGEN CAFÉ — cafetería y pedidos simulados | Portafolio</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="../assets/icons/brand-mark.svg?v=8">
+  <link rel="stylesheet" href="../css/commerce.css?v=8">
+  <link rel="stylesheet" href="../css/origen.css?v=8">
+  <script src="../js/demos.js?v=9" defer></script>
+  <script src="../js/commerce.js?v=8" defer></script>
+</head>
+<body class="theme-origen" data-commerce="origen" data-title-es="ORIGEN CAFÉ — cafetería y pedidos simulados | Portafolio" data-title-en="ORIGEN CAFÉ — coffee shop and mock orders | Portfolio">
+  <a href="#demo-main" class="skip-link" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="demo-bar utility">
+    <a href="../index.html#comerciales" class="demo-back" data-es="← Portafolio" data-en="← Portfolio">← Portafolio</a>
+    <span class="utility-note" data-es="Demo conceptual" data-en="Concept demo">Demo conceptual</span>
+    <div class="utility-languages" role="group" aria-label="Idioma" data-es-aria="Idioma" data-en-aria="Language">
+      <button type="button" data-demo-lang="es" aria-pressed="true" lang="es">ES</button>
+      <button type="button" data-demo-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </header>
+  <main id="demo-main" tabindex="-1">
+    <nav class="local-nav layout" aria-label="ORIGEN CAFÉ">
+      <a class="wordmark" href="#demo-main">ORIGEN CAFÉ</a>
+      <ul><li><a href="#carta" data-es="Carta" data-en="Menu">Carta</a></li><li><a href="#bolsa"><span data-es="Tu pedido" data-en="Your order">Tu pedido</span> <span data-basket-count>(0)</span></a></li></ul>
+    </nav>
+
+    <section class="layout origen-hero" aria-labelledby="brand-title">
+      <div class="origen-photo"><img src="../assets/images/commerce/origen.webp?v=9" srcset="../assets/images/commerce/origen-720.webp?v=9 720w, ../assets/images/commerce/origen.webp?v=9 1440w" sizes="(max-width: 700px) 91vw, (max-width: 1450px) 51vw, 735px" width="1440" height="960" alt="Café en tazas de cerámica y un croissant de almendras" data-es-alt="Café en tazas de cerámica y un croissant de almendras" data-en-alt="Coffee in ceramic cups and an almond croissant" fetchpriority="high"></div>
+      <div class="origen-heading">
+        <p class="kicker" data-es="Café y repostería" data-en="Coffee and pastries">Café y repostería</p>
+        <h1 id="brand-title">Origen <em>Café</em></h1>
+        <p data-es="Espresso, filtrados, bebidas frías y algo dulce para acompañar." data-en="Espresso, pour-over, cold drinks and something sweet on the side.">Espresso, filtrados, bebidas frías y algo dulce para acompañar.</p>
+        <a href="#carta" class="c-btn" data-es="Armar un pedido" data-en="Build an order">Armar un pedido</a>
+      </div>
+    </section>
+    <section class="layout c-section" id="carta" aria-labelledby="menu-title">
+      <header class="section-label"><h2 id="menu-title" data-es="La carta" data-en="The menu">La carta</h2><p data-es="Precios de ejemplo en bolivianos" data-en="Sample prices in bolivianos">Precios de ejemplo en bolivianos</p></header>
+      <div class="purchase-layout">
+        <div><fieldset class="filters" data-enhance disabled><legend class="sr-only"><span data-es="Filtrar catálogo" data-en="Filter catalog">Filtrar catálogo</span></legend><label><span data-es="Categoría" data-en="Category">Categoría</span><select data-category><option value="all" data-es="Todas" data-en="All">Todas</option><option value="hot" data-es="Calientes" data-en="Hot">Calientes</option><option value="cold" data-es="Frías" data-en="Cold">Frías</option><option value="sweets" data-es="Postres" data-en="Desserts">Postres</option></select></label><button class="c-btn subtle" type="button" data-clear-filters><span data-es="Quitar filtros" data-en="Clear filters">Quitar filtros</span></button></fieldset><p class="filter-status" role="status" data-filter-status></p>
+          <div class="cafe-menu" data-products><article class="product" data-product="espresso" data-category-item="hot" data-price="14">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Espresso" data-en="Espresso">Espresso</h3><strong>Bs 14</strong></div>
+        <p data-product-description data-es="Corto, intenso y con notas a cacao." data-en="Short and intense with cocoa notes.">Corto, intenso y con notas a cacao.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Espresso" data-es-aria="Añadir Espresso" data-en-aria="Add Espresso"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="capuccino" data-category-item="hot" data-price="22">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Capuchino" data-en="Cappuccino">Capuchino</h3><strong>Bs 22</strong></div>
+        <p data-product-description data-es="Espresso con leche vaporizada y espuma." data-en="Espresso with steamed milk and foam.">Espresso con leche vaporizada y espuma.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Capuchino" data-es-aria="Añadir Capuchino" data-en-aria="Add Cappuccino"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="filter" data-category-item="hot" data-price="19">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Café filtrado" data-en="Pour-over coffee">Café filtrado</h3><strong>Bs 19</strong></div>
+        <p data-product-description data-es="Extracción manual de perfil suave." data-en="Hand-brewed coffee with a mellow profile.">Extracción manual de perfil suave.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Café filtrado" data-es-aria="Añadir Café filtrado" data-en-aria="Add Pour-over coffee"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="cold-brew" data-category-item="cold" data-price="24">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Cold brew" data-en="Cold brew">Cold brew</h3><strong>Bs 24</strong></div>
+        <p data-product-description data-es="Infusión en frío, servida sobre hielo." data-en="Slow cold extraction served over ice.">Infusión en frío, servida sobre hielo.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Cold brew" data-es-aria="Añadir Cold brew" data-en-aria="Add Cold brew"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="ice-latte" data-category-item="cold" data-price="25">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Latte helado" data-en="Iced latte">Latte helado</h3><strong>Bs 25</strong></div>
+        <p data-product-description data-es="Espresso, leche y hielo." data-en="Espresso, milk and ice.">Espresso, leche y hielo.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Latte helado" data-es-aria="Añadir Latte helado" data-en-aria="Add Iced latte"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="croissant" data-category-item="sweets" data-price="18">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Croissant de almendras" data-en="Almond croissant">Croissant de almendras</h3><strong>Bs 18</strong></div>
+        <p data-product-description data-es="Masa hojaldrada y relleno de almendras." data-en="Flaky pastry with almond filling.">Masa hojaldrada y relleno de almendras.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Croissant de almendras" data-es-aria="Añadir Croissant de almendras" data-en-aria="Add Almond croissant"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="cake" data-category-item="sweets" data-price="22">
+      
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Tarta de limón" data-en="Lemon tart">Tarta de limón</h3><strong>Bs 22</strong></div>
+        <p data-product-description data-es="Crema cítrica sobre masa crujiente." data-en="Citrus curd on a crisp pastry shell.">Crema cítrica sobre masa crujiente.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            
+            <button type="submit" class="c-btn small" aria-label="Añadir Tarta de limón" data-es-aria="Añadir Tarta de limón" data-en-aria="Add Lemon tart"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article></div><p class="empty" data-filter-empty hidden data-es="No encontramos resultados. Prueba con otra búsqueda o quita los filtros." data-en="No results. Try another search or clear the filters.">No encontramos resultados. Prueba con otra búsqueda o quita los filtros.</p>
+        </div>
+        <aside class="basket" id="bolsa" aria-labelledby="bag-title">
+          <h2 id="bag-title" data-es="Pedido de prueba" data-en="Demo order">Pedido de prueba</h2>
+          <ul data-basket-items></ul>
+          <p data-basket-empty><span data-es="Añade un producto para ver el resumen." data-en="Add a product to see your summary.">Añade un producto para ver el resumen.</span></p>
+          <div class="basket-total"><span>Total</span><output data-basket-total>Bs 0</output></div>
+          <button type="button" class="c-btn" data-checkout disabled><span data-es="Simular pedido" data-en="Simulate order">Simular pedido</span></button>
+          <p class="message" role="status" data-checkout-status></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer c-footer"><div class="layout"><b>ORIGEN CAFÉ</b><p><span data-es="Cafetería ficticia. Los pedidos se simulan en el navegador." data-en="Fictional coffee shop. Orders are simulated in the browser.">Cafetería ficticia. Los pedidos se simulan en el navegador.</span></p><a href="../index.html#comerciales" data-es="Volver al portafolio ↗" data-en="Back to portfolio ↗">Volver al portafolio ↗</a></div></footer>
+</body>
+</html>

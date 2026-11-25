@@ -1,0 +1,39 @@
+.theme-brasa {
+  --bg: #17110f;
+  --surface: #2a1b17;
+  --text: #f7ead7;
+  --muted: #cfb9a3;
+  --line: #66463b;
+  --line-strong: #a88a78;
+  --primary: #8e2331;
+  --on-primary: #fff5ea;
+  --focus: #ffab99;
+  --display: Georgia, "Times New Roman", serif;
+  --hover: 1.16;
+  color-scheme: dark;
+}
+.brasa-hero > img { height: clamp(260px, 37vw, 590px); object-fit: cover; object-position: center 58%; }
+.brasa-title { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 8px 24px; padding-block: clamp(22px, 4vw, 54px) 22px; }
+.brasa-title .kicker { grid-column: 1 / -1; color: #dfac91; }
+.brasa-title h1 { font-size: clamp(3rem, 10vw, 9rem); margin-left: -.04em; letter-spacing: -.075em; line-height: .88; }
+.brasa-title h1 em { font-weight: 400; color: #ef9b82; }
+.brasa-title > div { display: flex; flex-wrap: wrap; gap: 6px; }
+.theme-brasa .wordmark { font: 700 1.08rem Georgia, serif; letter-spacing: .04em; }
+.menu-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 42px; }
+.dish { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+.dish h3 { font: 700 clamp(1.1rem,2vw,1.4rem) Georgia,serif; }
+.dish p { margin-top: 3px; color: var(--muted); font-size: .92rem; }
+.dish strong { font: .94rem var(--mono); white-space: nowrap; }
+.brasa-gallery { background: #352018; }
+.food-photos { display: grid; grid-template-columns: 1.2fr 1fr; gap: 12px; margin-top: 22px; }
+.food-photos img { aspect-ratio: 4 / 3; object-fit: cover; }
+.food-photos figcaption { margin-top: 6px; font: .8rem var(--mono); color: var(--muted); }
+.booking { display: grid; grid-template-columns: .85fr 1fr; gap: 32px; }
+.booking > div p { color: var(--muted); margin-top: 12px; }
+.booking fieldset { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: end; }
+.booking fieldset label:first-of-type { grid-column: 1 / -1; }
+.booking button { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 650px) {
+  .brasa-title, .booking, .menu-columns { grid-template-columns: 1fr; }
+  .brasa-title > div { margin-top: 8px; }
+}

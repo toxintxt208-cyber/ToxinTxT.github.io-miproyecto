@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tienda ficticia de ropa urbana con búsqueda, filtros, tallas y una bolsa guardada en el navegador." data-en-description="Fictional streetwear shop with search, filters, sizing and a shopping bag saved in the browser.">
+  <title>DISTRITO 01 — catálogo de ropa urbana | Portafolio</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="../assets/icons/brand-mark.svg?v=8">
+  <link rel="stylesheet" href="../css/commerce.css?v=8">
+  <link rel="stylesheet" href="../css/distrito.css?v=8">
+  <script src="../js/demos.js?v=9" defer></script>
+  <script src="../js/commerce.js?v=8" defer></script>
+</head>
+<body class="theme-distrito" data-commerce="distrito" data-title-es="DISTRITO 01 — catálogo de ropa urbana | Portafolio" data-title-en="DISTRITO 01 — streetwear catalog | Portfolio">
+  <a href="#demo-main" class="skip-link" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="demo-bar utility">
+    <a href="../index.html#comerciales" class="demo-back" data-es="← Portafolio" data-en="← Portfolio">← Portafolio</a>
+    <span class="utility-note" data-es="Demo conceptual" data-en="Concept demo">Demo conceptual</span>
+    <div class="utility-languages" role="group" aria-label="Idioma" data-es-aria="Idioma" data-en-aria="Language">
+      <button type="button" data-demo-lang="es" aria-pressed="true" lang="es">ES</button>
+      <button type="button" data-demo-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </header>
+  <main id="demo-main" tabindex="-1">
+    <nav class="local-nav layout" aria-label="DISTRITO 01">
+      <a class="wordmark" href="#demo-main">DISTRITO 01</a>
+      <ul><li><a href="#catalogo" data-es="Colección" data-en="Collection">Colección</a></li><li><a href="#bolsa"><span data-es="Bolsa" data-en="Bag">Bolsa</span> <span data-basket-count>(0)</span></a></li></ul>
+    </nav>
+
+    <section class="district-hero" aria-labelledby="brand-title">
+      <div class="layout district-heading">
+        <h1 id="brand-title">DISTRITO <span>01</span></h1>
+        <div><p class="kicker" data-es="Ropa urbana de corte amplio" data-en="Relaxed-fit streetwear">Ropa urbana de corte amplio</p><a href="#catalogo" class="c-btn" data-es="Ver colección ↓" data-en="View collection ↓">Ver colección ↓</a></div>
+      </div>
+      <figure><img src="../assets/images/commerce/distrito.webp?v=9" srcset="../assets/images/commerce/distrito-800.webp?v=9 800w, ../assets/images/commerce/distrito.webp?v=9 1440w" sizes="100vw" width="1440" height="960" alt="Ropa urbana oscura frente a arquitectura de concreto" data-es-alt="Ropa urbana oscura frente a arquitectura de concreto" data-en-alt="Dark streetwear against concrete architecture" fetchpriority="high"></figure>
+    </section>
+    <section class="layout c-section" id="catalogo" aria-labelledby="catalog-title">
+      <header class="section-label"><h2 id="catalog-title" data-es="Colección" data-en="Collection">Colección</h2><p data-es="Tallas y precios de ejemplo" data-en="Sample sizes and prices">Tallas y precios de ejemplo</p></header>
+      <fieldset class="filters" data-enhance disabled><legend class="sr-only"><span data-es="Filtrar catálogo" data-en="Filter catalog">Filtrar catálogo</span></legend><label><span data-es="Buscar" data-en="Search">Buscar</span><input type="search" data-search autocomplete="off"></label><label><span data-es="Categoría" data-en="Category">Categoría</span><select data-category><option value="all" data-es="Todas" data-en="All">Todas</option><option value="tops" data-es="Superiores" data-en="Tops">Superiores</option><option value="bottoms" data-es="Pantalones" data-en="Trousers">Pantalones</option><option value="footwear" data-es="Calzado" data-en="Footwear">Calzado</option></select></label><button class="c-btn subtle" type="button" data-clear-filters><span data-es="Quitar filtros" data-en="Clear filters">Quitar filtros</span></button></fieldset><p class="filter-status" role="status" data-filter-status></p>
+      <div class="purchase-layout">
+        <div><div class="fashion-grid" data-products><article class="product" data-product="hoodie" data-category-item="tops" data-price="249">
+      <img src="../assets/images/commerce/district-hoodie.webp" width="600" height="750" alt="Hoodie concreto" data-es-alt="Hoodie concreto" data-en-alt="Concrete hoodie" loading="lazy" fetchpriority="low" decoding="async">
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Hoodie concreto" data-en="Concrete hoodie">Hoodie concreto</h3><strong>Bs 249</strong></div>
+        <p data-product-description data-es="Algodón pesado, corte amplio." data-en="Heavyweight cotton, oversized cut.">Algodón pesado, corte amplio.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            <label><span data-es="Talla" data-en="Size">Talla</span><select data-size required><option value="" data-es="Elige una talla" data-en="Choose a size">Elige una talla</option><option value="S" data-es="S" data-en="S">S</option><option value="M" data-es="M" data-en="M">M</option><option value="L" data-es="L" data-en="L">L</option><option value="XL" data-es="XL" data-en="XL">XL</option></select></label><label><span data-es="Cantidad" data-en="Quantity">Cantidad</span><input data-quantity type="number" min="1" max="9" step="1" value="1" required inputmode="numeric"></label>
+            <button type="submit" class="c-btn small" aria-label="Añadir Hoodie concreto" data-es-aria="Añadir Hoodie concreto" data-en-aria="Add Concrete hoodie"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="cargo" data-category-item="bottoms" data-price="280">
+      <img src="../assets/images/commerce/district-cargo.webp" width="600" height="750" alt="Cargo urbano" data-es-alt="Cargo urbano" data-en-alt="Urban cargo trousers" loading="lazy" fetchpriority="low" decoding="async">
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Cargo urbano" data-en="Urban cargo trousers">Cargo urbano</h3><strong>Bs 280</strong></div>
+        <p data-product-description data-es="Pierna ancha y bolsillos utilitarios." data-en="Wide leg and utility pockets.">Pierna ancha y bolsillos utilitarios.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            <label><span data-es="Talla" data-en="Size">Talla</span><select data-size required><option value="" data-es="Elige una talla" data-en="Choose a size">Elige una talla</option><option value="S" data-es="S" data-en="S">S</option><option value="M" data-es="M" data-en="M">M</option><option value="L" data-es="L" data-en="L">L</option><option value="XL" data-es="XL" data-en="XL">XL</option></select></label><label><span data-es="Cantidad" data-en="Quantity">Cantidad</span><input data-quantity type="number" min="1" max="9" step="1" value="1" required inputmode="numeric"></label>
+            <button type="submit" class="c-btn small" aria-label="Añadir Cargo urbano" data-es-aria="Añadir Cargo urbano" data-en-aria="Add Urban cargo trousers"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="tee" data-category-item="tops" data-price="120">
+      <img src="../assets/images/commerce/district-tee.webp?v=9" width="600" height="750" alt="Camiseta cruda" data-es-alt="Camiseta cruda" data-en-alt="Ecru tee" loading="lazy" fetchpriority="low" decoding="async">
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Camiseta cruda" data-en="Ecru tee">Camiseta cruda</h3><strong>Bs 120</strong></div>
+        <p data-product-description data-es="Jersey de algodón, cuello cerrado." data-en="Cotton jersey with a close crew neck.">Jersey de algodón, cuello cerrado.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            <label><span data-es="Talla" data-en="Size">Talla</span><select data-size required><option value="" data-es="Elige una talla" data-en="Choose a size">Elige una talla</option><option value="S" data-es="S" data-en="S">S</option><option value="M" data-es="M" data-en="M">M</option><option value="L" data-es="L" data-en="L">L</option><option value="XL" data-es="XL" data-en="XL">XL</option></select></label><label><span data-es="Cantidad" data-en="Quantity">Cantidad</span><input data-quantity type="number" min="1" max="9" step="1" value="1" required inputmode="numeric"></label>
+            <button type="submit" class="c-btn small" aria-label="Añadir Camiseta cruda" data-es-aria="Añadir Camiseta cruda" data-en-aria="Add Ecru tee"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article><article class="product" data-product="sneakers" data-category-item="footwear" data-price="320">
+      <img src="../assets/images/products/sneaker.webp" width="700" height="700" alt="Tenis de calle" data-es-alt="Tenis de calle" data-en-alt="Street sneakers" loading="lazy" fetchpriority="low" decoding="async">
+      <div class="product-info">
+        <div class="product-heading"><h3 data-product-name data-es="Tenis de calle" data-en="Street sneakers">Tenis de calle</h3><strong>Bs 320</strong></div>
+        <p data-product-description data-es="Silueta deportiva de suela gruesa." data-en="Sport silhouette with a thick sole.">Silueta deportiva de suela gruesa.</p>
+        
+        <form class="product-form" data-buy>
+          <fieldset data-enhance disabled>
+            <legend class="sr-only"><span data-es="Opciones del producto" data-en="Product options">Opciones del producto</span></legend>
+            <label><span data-es="Talla" data-en="Size">Talla</span><select data-size required><option value="" data-es="Elige una talla" data-en="Choose a size">Elige una talla</option><option value="38" data-es="38" data-en="38">38</option><option value="39" data-es="39" data-en="39">39</option><option value="40" data-es="40" data-en="40">40</option><option value="41" data-es="41" data-en="41">41</option><option value="42" data-es="42" data-en="42">42</option></select></label><label><span data-es="Cantidad" data-en="Quantity">Cantidad</span><input data-quantity type="number" min="1" max="9" step="1" value="1" required inputmode="numeric"></label>
+            <button type="submit" class="c-btn small" aria-label="Añadir Tenis de calle" data-es-aria="Añadir Tenis de calle" data-en-aria="Add Street sneakers"><span data-es="Añadir" data-en="Add">Añadir</span></button>
+            
+          </fieldset>
+        </form>
+      </div>
+    </article></div><p class="empty" data-filter-empty hidden data-es="No encontramos resultados. Prueba con otra búsqueda o quita los filtros." data-en="No results. Try another search or clear the filters.">No encontramos resultados. Prueba con otra búsqueda o quita los filtros.</p></div>
+        <aside class="basket" id="bolsa" aria-labelledby="bag-title">
+          <h2 id="bag-title" data-es="Bolsa" data-en="Bag">Bolsa</h2>
+          <ul data-basket-items></ul>
+          <p data-basket-empty><span data-es="Añade un producto para ver el resumen." data-en="Add a product to see your summary.">Añade un producto para ver el resumen.</span></p>
+          <div class="basket-total"><span>Total</span><output data-basket-total>Bs 0</output></div>
+          <button type="button" class="c-btn" data-checkout disabled><span data-es="Simular compra" data-en="Simulate purchase">Simular compra</span></button>
+          <p class="message" role="status" data-checkout-status></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer c-footer"><div class="layout"><b>DISTRITO 01</b><p><span data-es="Tienda ficticia. La bolsa se guarda solo en este navegador." data-en="Fictional store. The bag is saved in this browser only.">Tienda ficticia. La bolsa se guarda solo en este navegador.</span></p><a href="../index.html#comerciales" data-es="Volver al portafolio ↗" data-en="Back to portfolio ↗">Volver al portafolio ↗</a></div></footer>
+</body>
+</html>

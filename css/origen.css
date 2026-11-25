@@ -1,0 +1,34 @@
+.theme-origen {
+  --bg: #f6eddb;
+  --surface: #eae2ce;
+  --text: #352319;
+  --muted: #645140;
+  --line: #bdb19a;
+  --line-strong: #8a7965;
+  --primary: #414b2e;
+  --on-primary: #fffaf0;
+  --focus: #43602d;
+  --display: Palatino, "Palatino Linotype", Georgia, serif;
+  --radius: 4px;
+}
+.theme-origen .wordmark { font: 700 1.08rem var(--display); letter-spacing: .09em; }
+.origen-hero { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,.86fr); gap: clamp(20px,6vw,90px); align-items: center; padding-block: clamp(22px,4vw,52px); }
+.origen-photo img { aspect-ratio: 6 / 5; object-fit: cover; object-position: 53% 50%; }
+.origen-heading { max-width: 30rem; }
+.origen-heading h1 { font-size: clamp(3.15rem,8.1vw,7.6rem); letter-spacing: -.075em; margin-block: 10px 18px; }
+.origen-heading h1 em { display: block; color: #485334; font-weight: 400; }
+.origen-heading p:not(.kicker) { color: var(--muted); margin-bottom: 20px; }
+.theme-origen #carta { border-top: 2px solid var(--line); }
+.cafe-menu .product { padding-block: 16px; border-bottom: 1px solid var(--line); }
+.cafe-menu .product-info { display: grid; grid-template-columns: 1fr auto; gap: 4px 18px; align-items: baseline; }
+.cafe-menu .product-heading { grid-column: 1; }
+.cafe-menu .product-info p { grid-column: 1; }
+.cafe-menu .product-form { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+.cafe-menu .product-form fieldset { margin: 0; }
+.cafe-menu h3 { font-family: var(--display); }
+@media (max-width: 700px) {
+  .origen-hero { grid-template-columns: 1fr; }
+  .origen-heading { grid-row: 1; }
+  .origen-heading h1 em { display: inline; }
+  .origen-photo img { aspect-ratio: 3 / 2; }
+}

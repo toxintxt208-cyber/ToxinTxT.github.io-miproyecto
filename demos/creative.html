@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA — galería editorial interactiva | Portafolio</title>
+  <meta name="description" content="Sitio editorial con seis fotografías y una galería ampliable que se puede recorrer con el teclado." data-en-description="Editorial site with six photographs and a keyboard-accessible gallery.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#efece4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23efece4'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='24' font-weight='700' fill='%23ff4a24' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/demos.css?v=8">
+</head>
+
+<body class="theme-creative" data-title-es="FORMA — galería editorial interactiva | Portafolio" data-title-en="FORMA — interactive editorial gallery | Portfolio">
+  <a class="skip-link" href="#demo-main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <header class="demo-bar">
+    <a class="demo-back" href="../index.html#proyectos">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
+      <span data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</span>
+    </a>
+    <span class="demo-tag"><i aria-hidden="true"></i><span data-es="Demostración conceptual" data-en="Concept demo">Demostración conceptual</span></span>
+    <div class="demo-lang" role="group" aria-label="Seleccionar idioma" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+      <button type="button" data-demo-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-demo-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main tabindex="-1" id="demo-main">
+    <div class="d-wrap">
+      <nav class="cr-nav" aria-label="FORMA" data-es-aria="Navegación de FORMA" data-en-aria="FORMA navigation">
+        <a class="cr-brand" href="#demo-main">FORMA</a>
+        <div class="cr-links">
+          <a href="#obra" data-es="Obra" data-en="Work">Obra</a>
+          <a href="#estudio" data-es="Estudio" data-en="Studio">Estudio</a>
+          <a href="../index.html#proyectos" data-es="Portafolio" data-en="Portfolio">Portafolio</a>
+        </div>
+      </nav>
+
+      <section class="cr-hero" aria-labelledby="cr-title">
+        <div class="cr-hero-copy reveal">
+          <p class="cr-hero-top" data-es="Estudio de diseño editorial" data-en="Editorial design studio">Estudio de diseño editorial</p>
+          <h1 id="cr-title">
+            <span data-es="Ideas que se" data-en="Ideas that">Ideas que se</span>
+            <em data-es="sienten." data-en="feel.">sienten.</em>
+          </h1>
+          <div class="cr-hero-foot">
+            <p data-es="Seis imágenes para explorar cómo el color, el encuadre y el espacio cambian nuestra lectura de una escena." data-en="Six images explore how colour, framing and space change the way we read a scene.">Seis imágenes para explorar cómo el color, el encuadre y el espacio cambian nuestra lectura de una escena.</p>
+            <a class="d-btn d-btn-outline" href="#obra" data-es="Ver galería" data-en="View gallery">Ver galería</a>
+          </div>
+        </div>
+        <figure class="cr-hero-photo reveal">
+          <img src="../assets/images/creative/gallery-2.webp?v=9" srcset="../assets/images/creative/gallery-2-720.webp?v=9 720w, ../assets/images/creative/gallery-2.webp?v=9 800w" sizes="(max-width: 780px) 95vw, (max-width: 1248px) 37vw, 475px" width="800" height="1000" fetchpriority="high" alt="Torres fotografiadas desde la calle en contrapicado" data-es-alt="Torres fotografiadas desde la calle en contrapicado" data-en-alt="Tower blocks photographed from street level">
+        </figure>
+      </section>
+    </div>
+
+    <div class="d-wrap">
+      <section class="cr-gallery" id="obra" aria-labelledby="gallery-title">
+        <div class="cr-gallery-head">
+          <h2 id="gallery-title" data-es="Galería" data-en="Gallery">Galería</h2>
+          <span data-es="Selecciona una imagen para ampliarla" data-en="Select an image to enlarge it">Selecciona una imagen para ampliarla</span>
+        </div>
+
+        <div class="cr-grid">
+          <button class="cr-item reveal" type="button" data-full="../assets/images/creative/gallery-1.webp?v=9" data-caption-es="Pabellón · Arquitectura" data-caption-en="Pavilion · Architecture" data-es-alt="Pabellón de arquitectura contemporánea" data-en-alt="Contemporary architecture pavilion">
+            <img src="../assets/images/creative/gallery-1.webp?v=9" width="800" height="1000" loading="lazy" fetchpriority="low" decoding="async" alt="Pabellón de arquitectura contemporánea" data-es-alt="Pabellón de arquitectura contemporánea" data-en-alt="Contemporary architecture pavilion">
+            <span class="cr-cap"><b>01</b><span data-es="Pabellón" data-en="Pavilion">Pabellón</span></span>
+          </button>
+
+          <button class="cr-item reveal" type="button" style="--delay: 60ms" data-full="../assets/images/creative/gallery-2.webp?v=9" data-caption-es="Torre · Ciudad" data-caption-en="Tower · City" data-es-alt="Rascacielos vistos desde la calle" data-en-alt="Skyscrapers seen from the street">
+            <img src="../assets/images/creative/gallery-2.webp?v=9" srcset="../assets/images/creative/gallery-2-720.webp?v=9 720w, ../assets/images/creative/gallery-2.webp?v=9 800w" sizes="(max-width: 780px) 95vw, (max-width: 1248px) 37vw, 475px" width="800" height="1000" loading="lazy" fetchpriority="low" alt="Rascacielos vistos desde la calle" data-es-alt="Rascacielos vistos desde la calle" data-en-alt="Skyscrapers seen from the street">
+            <span class="cr-cap"><b>02</b><span data-es="Torre" data-en="Tower">Torre</span></span>
+          </button>
+
+          <button class="cr-item reveal" type="button" data-full="../assets/images/creative/gallery-3.webp?v=9" data-caption-es="Editorial · Moda" data-caption-en="Editorial · Fashion" data-es-alt="Retrato editorial de moda en la calle" data-en-alt="Street fashion editorial portrait">
+            <img src="../assets/images/creative/gallery-3.webp?v=9" width="800" height="1000" loading="lazy" fetchpriority="low" alt="Retrato editorial de moda en la calle" data-es-alt="Retrato editorial de moda en la calle" data-en-alt="Street fashion editorial portrait">
+            <span class="cr-cap"><b>03</b><span data-es="Editorial" data-en="Editorial">Editorial</span></span>
+          </button>
+
+          <button class="cr-item reveal" type="button" style="--delay: 60ms" data-full="../assets/images/creative/gallery-4.webp?v=9" data-caption-es="Interior · Materia" data-caption-en="Interior · Matter" data-es-alt="Interior cálido con muebles de madera" data-en-alt="Warm interior with wooden furniture">
+            <img src="../assets/images/creative/gallery-4.webp?v=9" width="800" height="1000" loading="lazy" fetchpriority="low" alt="Interior cálido con muebles de madera" data-es-alt="Interior cálido con muebles de madera" data-en-alt="Warm interior with wooden furniture">
+            <span class="cr-cap"><b>04</b><span data-es="Interior" data-en="Interior">Interior</span></span>
+          </button>
+
+          <button class="cr-item reveal" type="button" data-full="../assets/images/creative/gallery-5.webp?v=9" data-caption-es="Color · Obra" data-caption-en="Colour · Artwork" data-es-alt="Pintura abstracta con colores intensos" data-en-alt="Abstract painting with intense colours">
+            <img src="../assets/images/creative/gallery-5.webp?v=9" width="800" height="1000" loading="lazy" fetchpriority="low" alt="Pintura abstracta con colores intensos" data-es-alt="Pintura abstracta con colores intensos" data-en-alt="Abstract painting with intense colours">
+            <span class="cr-cap"><b>05</b><span data-es="Color" data-en="Colour">Color</span></span>
+          </button>
+
+          <button class="cr-item reveal" type="button" style="--delay: 60ms" data-full="../assets/images/creative/gallery-6.webp?v=9" data-caption-es="Camino · Paisaje" data-caption-en="Road · Landscape" data-es-alt="Carretera recta atravesando un paisaje desértico" data-en-alt="Straight road crossing a desert landscape">
+            <img src="../assets/images/creative/gallery-6.webp?v=9" width="800" height="1000" loading="lazy" fetchpriority="low" alt="Carretera recta atravesando un paisaje desértico" data-es-alt="Carretera recta atravesando un paisaje desértico" data-en-alt="Straight road crossing a desert landscape">
+            <span class="cr-cap"><b>06</b><span data-es="Camino" data-en="Road">Camino</span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="cr-statement" id="estudio" aria-labelledby="studio-title">
+        <div>
+          <span class="d-kicker" id="studio-title" data-es="Declaración" data-en="Statement">Declaración</span>
+        </div>
+        <div>
+          <blockquote><span data-es="El diseño editorial no decora:" data-en="Editorial design does not decorate:">El diseño editorial no decora:</span> <em data-es="ordena la mirada" data-en="it orders the gaze">ordena la mirada</em><span data-es=". Cada margen decide qué se lee primero." data-en=". Every margin decides what is read first.">. Cada margen decide qué se lee primero.</span></blockquote>
+        </div>
+      </section>
+
+      <section class="cr-about" aria-label="Sobre el ejercicio" data-es-aria="Sobre el ejercicio" data-en-aria="About the exercise">
+        <div>
+          <h3 data-es="Dirección" data-en="Direction">Dirección</h3>
+          <p data-es="Una retícula flexible que alterna escalas y respira entre bloques de imagen y texto." data-en="A flexible grid that alternates scales and breathes between image and text blocks.">Una retícula flexible que alterna escalas y respira entre bloques de imagen y texto.</p>
+        </div>
+        <div>
+          <h3 data-es="Contraste" data-en="Contrast">Contraste</h3>
+          <p data-es="Tipografía grande, serif italic como acento y un naranja puntual para romper la neutralidad del papel." data-en="Large type, italic serif accents and a single orange note to break the neutrality of paper.">Tipografía grande, serif italic como acento y un naranja puntual para romper la neutralidad del papel.</p>
+        </div>
+        <div>
+          <h3 data-es="Interacción" data-en="Interaction">Interacción</h3>
+          <p data-es="La galería se amplía sin salir de la página y mantiene el foco del teclado en todo momento." data-en="The gallery expands without leaving the page and keeps keyboard focus at all times.">La galería se amplía sin salir de la página y mantiene el foco del teclado en todo momento.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="demo-footer">
+    <div class="d-wrap demo-footer-in">
+      <p data-es="FORMA es un estudio ficticio. Ejercicio de diseño editorial creado como demostración conceptual." data-en="FORMA is a fictional studio. An editorial design exercise created as a concept demo.">FORMA es un estudio ficticio. Ejercicio de diseño editorial creado como demostración conceptual.</p>
+      <p class="demo-footer-links">
+        <span data-es="Fotografía: Unsplash" data-en="Photography: Unsplash">Fotografía: Unsplash</span>
+        <a href="../index.html#proyectos" data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</a>
+      </p>
+    </div>
+  </footer>
+
+  <dialog class="cr-lightbox" id="lightbox" aria-label="Galería ampliada" data-es-aria="Galería ampliada" data-en-aria="Enlarged gallery">
+    <div class="cr-lightbox-bar">
+      <span data-lightbox-caption role="status"></span>
+      <button type="button" data-lightbox-close autofocus aria-label="Cerrar" data-es-aria="Cerrar" data-en-aria="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12"/><path d="m18 6-12 12"/></svg>
+      </button>
+    </div>
+    <img alt="" width="800" height="1000">
+    <p class="lightbox-error" data-lightbox-error hidden data-es="No se pudo cargar esta imagen. Puedes pasar a otra." data-en="This image could not load. You can move to another one.">No se pudo cargar esta imagen. Puedes pasar a otra.</p>
+    <div class="lightbox-controls">
+      <button type="button" data-lightbox-step="-1" data-es="Anterior" data-en="Previous">Anterior</button>
+      <button type="button" data-lightbox-step="1" data-es="Siguiente" data-en="Next">Siguiente</button>
+    </div>
+  </dialog>
+
+  <script src="../js/demos.js?v=9" defer></script>
+</body>
+</html>

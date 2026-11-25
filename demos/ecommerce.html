@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — tienda conceptual de audio | Portafolio</title>
+  <meta name="description" content="Tienda ficticia de audio y objetos de diseño con categorías y carrito interactivo." data-en-description="Fictional audio and design shop with categories and an interactive shopping cart.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000000'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='24' font-weight='700' fill='%23f2d21b' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/demos.css?v=8">
+</head>
+
+<body class="theme-store" data-title-es="NOVA — tienda conceptual de audio | Portafolio" data-title-en="NOVA — concept audio shop | Portfolio">
+  <a class="skip-link" href="#demo-main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <header class="demo-bar">
+    <a class="demo-back" href="../index.html#proyectos">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
+      <span data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</span>
+    </a>
+    <span class="demo-tag"><i aria-hidden="true"></i><span data-es="Demostración conceptual" data-en="Concept demo">Demostración conceptual</span></span>
+    <div class="demo-lang" role="group" aria-label="Seleccionar idioma" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+      <button type="button" data-demo-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-demo-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main tabindex="-1" id="demo-main">
+    <div class="d-wrap">
+      <nav class="store-nav" aria-label="Tienda NOVA" data-es-aria="Navegación de la tienda NOVA" data-en-aria="NOVA store navigation">
+        <a class="store-brand" href="#demo-main">NOVA<span>.</span></a>
+        <div class="store-links">
+          <a href="#catalogo" data-es="Catálogo" data-en="Catalog">Catálogo</a>
+          <a href="#historia" data-es="Estudio" data-en="Studio">Estudio</a>
+          <a href="#pie" data-es="Sobre la demo" data-en="About this demo">Sobre la demo</a>
+        </div>
+        <button class="store-cart" type="button" id="cart-button" aria-haspopup="dialog" aria-controls="cart-dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1.5 12.5a1 1 0 0 1-1 1.1H5.5a1 1 0 0 1-1-1.1L6 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span data-cart-label>Carrito</span>
+          <b id="cart-count">0</b>
+        </button>
+      </nav>
+
+      <section class="store-hero" aria-labelledby="store-title">
+        <div class="reveal">
+          <span class="d-kicker" data-es="Colección de audio y diseño" data-en="Audio and design collection">Colección de audio y diseño</span>
+          <h1 id="store-title">
+            <span data-es="Objetos que suenan" data-en="Objects that sound">Objetos que suenan</span>
+            <em data-es="mejor." data-en="better.">mejor.</em>
+          </h1>
+          <p data-es="Una tienda conceptual de audio y diseño cotidiano. Piezas seleccionadas, materiales honestos y una experiencia de compra pensada al detalle." data-en="A concept store for audio and everyday design. Selected pieces, honest materials and a shopping experience considered down to the detail.">Una tienda conceptual de audio y diseño cotidiano. Piezas seleccionadas, materiales honestos y una experiencia de compra pensada al detalle.</p>
+          <div class="store-hero-actions">
+            <a class="d-btn d-btn-solid" href="#catalogo">
+              <span data-es="Explorar catálogo" data-en="Explore catalog">Explorar catálogo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+            <a class="d-btn d-btn-outline" href="#historia" data-es="Conocer el estudio" data-en="Meet the studio">Conocer el estudio</a>
+          </div>
+        </div>
+
+        <div class="store-hero-media reveal" style="--delay: 120ms">
+          <img src="../assets/images/products/headphones.webp" width="700" height="700" alt="Auriculares negros sobre fondo amarillo" data-es-alt="Auriculares negros sobre fondo amarillo" data-en-alt="Black headphones on a yellow background" fetchpriority="high">
+          <span class="store-hero-badge"><b>NOVA Studio</b> · $329</span>
+        </div>
+      </section>
+
+      <div class="store-strip" role="group" aria-label="Información de la demo" data-es-aria="Información de la demo" data-en-aria="Demo information">
+        <span><i aria-hidden="true"></i><span data-es="Catálogo de ejemplo" data-en="Sample catalog">Catálogo de ejemplo</span></span>
+        <span><i aria-hidden="true"></i><span data-es="Precios en USD" data-en="Prices in USD">Precios en USD</span></span>
+        <span><i aria-hidden="true"></i><span data-es="Carrito de prueba" data-en="Demo cart">Carrito de prueba</span></span>
+        <span><i aria-hidden="true"></i><span data-es="Sin compras reales" data-en="No actual purchases">Sin compras reales</span></span>
+      </div>
+
+      <section class="store-catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="store-catalog-head">
+          <div>
+            <span class="d-kicker" data-es="Catálogo" data-en="Catalog">Catálogo</span>
+            <h2 id="catalog-title" data-es="Selección esencial" data-en="The essentials">Selección esencial</h2>
+          </div>
+          <div class="store-filters" role="group" aria-label="Filtrar productos" data-es-aria="Filtrar productos" data-en-aria="Filter products">
+            <button type="button" data-filter="all" aria-pressed="true" data-es="Todo" data-en="All">Todo</button>
+            <button type="button" data-filter="audio" aria-pressed="false" data-es="Audio" data-en="Audio">Audio</button>
+            <button type="button" data-filter="objects" aria-pressed="false" data-es="Objetos" data-en="Objects">Objetos</button>
+            <button type="button" data-filter="footwear" aria-pressed="false" data-es="Calzado" data-en="Footwear">Calzado</button>
+          </div>
+        </div>
+
+        <div class="store-grid" id="store-grid">
+          <article class="product reveal" data-cat="audio">
+            <div class="product-media">
+              <img src="../assets/images/products/headphones.webp" width="700" height="700" loading="lazy" alt="Auriculares Studio en negro" data-es-alt="Auriculares Studio en negro" data-en-alt="Studio headphones in black">
+              <span class="product-tag" data-es="Favorito" data-en="Best seller">Favorito</span>
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Auriculares Studio" data-en="Studio Headphones">Auriculares Studio</h3>
+                <p data-es="Audio · Inalámbrico" data-en="Audio · Wireless">Audio · Inalámbrico</p>
+              </div>
+              <span class="product-price" data-price="329">$329</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+
+          <article class="product reveal" data-cat="objects" style="--delay: 70ms">
+            <div class="product-media">
+              <img src="../assets/images/products/watch.webp" width="700" height="700" loading="lazy" alt="Reloj minimalista de correa clara" data-es-alt="Reloj minimalista de correa clara" data-en-alt="Minimalist watch with a light strap">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Reloj Meridian" data-en="Meridian Watch">Reloj Meridian</h3>
+                <p data-es="Objetos · Acero" data-en="Objects · Steel">Objetos · Acero</p>
+              </div>
+              <span class="product-price" data-price="189">$189</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+
+          <article class="product reveal" data-cat="audio" style="--delay: 140ms">
+            <div class="product-media">
+              <img src="../assets/images/products/speaker.webp" width="700" height="700" loading="lazy" alt="Altavoz portátil de textil oscuro" data-es-alt="Altavoz portátil de textil oscuro" data-en-alt="Portable speaker in dark fabric">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Altavoz Field" data-en="Field Speaker">Altavoz Field</h3>
+                <p data-es="Audio · Portátil" data-en="Audio · Portable">Audio · Portátil</p>
+              </div>
+              <span class="product-price" data-price="149">$149</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+
+          <article class="product reveal" data-cat="objects" style="--delay: 70ms">
+            <div class="product-media">
+              <img src="../assets/images/products/sunglasses.webp" width="700" height="700" loading="lazy" alt="Gafas de sol redondas con montura dorada" data-es-alt="Gafas de sol redondas con montura dorada" data-en-alt="Round sunglasses with gold frames">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Gafas Atelier" data-en="Atelier Sunglasses">Gafas Atelier</h3>
+                <p data-es="Objetos · Titanio" data-en="Objects · Titanium">Objetos · Titanio</p>
+              </div>
+              <span class="product-price" data-price="95">$95</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+
+          <article class="product reveal" data-cat="objects" style="--delay: 140ms">
+            <div class="product-media">
+              <img src="../assets/images/products/backpack.webp" width="700" height="700" loading="lazy" alt="Mochila negra de diseño minimalista" data-es-alt="Mochila negra de diseño minimalista" data-en-alt="Black minimalist backpack">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Mochila Transit" data-en="Transit Backpack">Mochila Transit</h3>
+                <p data-es="Objetos · Nylon" data-en="Objects · Nylon">Objetos · Nylon</p>
+              </div>
+              <span class="product-price" data-price="120">$120</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+
+          <article class="product reveal" data-cat="footwear" style="--delay: 210ms">
+            <div class="product-media">
+              <img src="../assets/images/products/sneaker.webp" width="700" height="700" loading="lazy" alt="Zapatilla deportiva roja" data-es-alt="Zapatilla deportiva roja" data-en-alt="Red running sneaker">
+              <span class="product-tag" data-es="Nuevo" data-en="New">Nuevo</span>
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-es="Zapatilla Pace" data-en="Pace Sneaker">Zapatilla Pace</h3>
+                <p data-es="Calzado · Edición limitada" data-en="Footwear · Limited edition">Calzado · Edición limitada</p>
+              </div>
+              <span class="product-price" data-price="140">$140</span>
+            </div>
+            <button class="product-add" type="button" data-add>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              <span data-es="Añadir" data-en="Add">Añadir</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="store-quote" id="historia" aria-labelledby="studio-title">
+        <div>
+          <h2 id="studio-title" class="d-kicker" data-es="Estudio NOVA" data-en="NOVA studio">Estudio NOVA</h2>
+          <p data-es="“El diseño no se añade al final: es la forma en que algo funciona.”" data-en="“Design is not added at the end: it is the way something works.”">“El diseño no se añade al final: es la forma en que algo funciona.”</p>
+          <cite data-es="Identidad y producto · Marca ficticia" data-en="Identity and product · Fictional brand">Identidad y producto · Marca ficticia</cite>
+        </div>
+        <svg class="store-quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M10.5 5.2c-3.2.8-5.5 3.5-5.5 7.1V19h5.8v-5.8H7.5c0-2.1 1.1-3.6 3-4.2V5.2Zm9 0c-3.2.8-5.5 3.5-5.5 7.1V19h5.8v-5.8h-3.3c0-2.1 1.1-3.6 3-4.2V5.2Z"/>
+        </svg>
+      </section>
+    </div>
+  </main>
+
+  <footer class="demo-footer" id="pie">
+    <div class="d-wrap demo-footer-in">
+      <p data-es="Sitio de demostración. NOVA es una marca ficticia creada para mostrar diseño y desarrollo frontend." data-en="Demo site. NOVA is a fictional brand created to showcase frontend design and development.">Sitio de demostración. NOVA es una marca ficticia creada para mostrar diseño y desarrollo frontend.</p>
+      <p class="demo-footer-links">
+        <span data-es="Fotografía: Unsplash" data-en="Photography: Unsplash">Fotografía: Unsplash</span>
+        <a href="../index.html#proyectos" data-es="Volver al portafolio" data-en="Back to portfolio">Volver al portafolio</a>
+      </p>
+    </div>
+  </footer>
+
+  <dialog class="store-basket" id="cart-dialog" aria-labelledby="cart-title">
+    <header class="store-basket-head">
+      <h2 id="cart-title" data-es="Carrito de prueba" data-en="Demo cart">Carrito de prueba</h2>
+      <form method="dialog">
+        <button class="basket-control" type="submit" autofocus aria-label="Cerrar carrito" data-es-aria="Cerrar carrito" data-en-aria="Close cart">×</button>
+      </form>
+    </header>
+    <p class="store-basket-note" data-es="Este carrito es una simulación. No se realizan compras ni pagos." data-en="This cart is a simulation. No purchases or payments are made.">Este carrito es una simulación. No se realizan compras ni pagos.</p>
+    <p class="store-basket-empty" data-cart-empty data-es="El carrito está vacío. Añade un producto del catálogo para empezar." data-en="Your cart is empty. Add a product from the catalog to get started.">El carrito está vacío. Añade un producto del catálogo para empezar.</p>
+    <ul data-cart-items></ul>
+    <footer class="store-basket-total">
+      <span data-es="Total de prueba" data-en="Demo total">Total de prueba</span>
+      <output data-cart-total aria-live="polite">$0</output>
+    </footer>
+  </dialog>
+
+  <div class="demo-toast" id="demo-toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+    <span id="demo-toast-text"></span>
+  </div>
+
+  <script src="../js/demos.js?v=9" defer></script>
+</body>
+</html>
