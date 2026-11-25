@@ -2,7 +2,7 @@
 
 const translations = {
   "es": {
-    "meta.title": "Yanni Josue Huayata Equice — Portafolio",
+    "meta.title": "Yanni Josue Huayta Equice — Portafolio",
     "meta.description": "Portafolio de proyectos web, aplicaciones interactivas y propuestas digitales para diferentes necesidades.",
     "nav.openMenu": "Abrir menú",
     "nav.closeMenu": "Cerrar menú",
@@ -15,7 +15,7 @@ const translations = {
     "nav.proyectos": "Proyectos",
     "nav.comerciales": "Demos comerciales",
     "nav.contacto": "Contacto",
-    "about.p1": "Soy Yanni Josue Huayata Equice, desarrollador web independiente.",
+    "about.p1": "Soy Yanni Josue Huayta Equice, desarrollador web independiente.",
     "about.p2": "Mi propósito es ayudar a negocios, emprendedores y profesionales a transformar sus ideas en una presencia digital atractiva y funcional.",
     "about.p3": "Desarrollo páginas web pensadas para comunicar, destacar y facilitar la conexión entre negocios y clientes. Desde sitios comerciales y menús digitales hasta portafolios y proyectos personalizados.",
     "about.p4": "Creo que una buena página web no debe limitarse a verse bien: debe ser rápida, fácil de utilizar y responder a las necesidades reales de cada negocio.",
@@ -85,7 +85,7 @@ const translations = {
     "footer.top": "Volver arriba"
   },
   "en": {
-    "meta.title": "Yanni Josue Huayata Equice — Portfolio",
+    "meta.title": "Yanni Josue Huayta Equice — Portfolio",
     "meta.description": "A portfolio of web projects, interactive applications and digital concepts for a range of needs.",
     "nav.openMenu": "Open menu",
     "nav.closeMenu": "Close menu",
@@ -98,7 +98,7 @@ const translations = {
     "nav.proyectos": "Projects",
     "nav.comerciales": "Business demos",
     "nav.contacto": "Contact",
-    "about.p1": "I’m Yanni Josue Huayata Equice, a programmer interested in web development and in building digital tools that combine functionality, design and ease of use.",
+    "about.p1": "I’m Yanni Josue Huayta Equice, a programmer interested in web development and in building digital tools that combine functionality, design and ease of use.",
     "about.p2": "I focus on building well-structured, interactive websites that adapt to different devices. I pay close attention to how the code is organized, how people use the site and how the details look.",
     "about.p3": "This portfolio explores what the web can do through projects and demos ranging from interactive applications to sites for restaurants, shops and digital catalogs.",
     "about.p4": "I give each project its own identity and a specific purpose, with clear, accessible interfaces shaped by what people need to do.",
